@@ -11,7 +11,7 @@
   align-items: center;
   text-align: center;
   margin-top: -360px;
-  margin-bottom: 360px;
+  /* margin-bottom: 60px; */
   border-radius: 100%;
 }
 
@@ -63,7 +63,7 @@
 .cancel {
   cursor: pointer;
   color: grey;
-  margin-bottom: 40px;
+  margin-bottom: 7px;
 }
 
 
