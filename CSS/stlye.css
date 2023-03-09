@@ -17,7 +17,7 @@
 
 #content_center {
   text-align: center;
-  background-color: whitesmoke
+  background-color: whitesmoke;
 }
 
 .text {
@@ -74,73 +74,15 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    background-color:whitesmoke;
   }
-  
-  /* Adjust #container style for mobile */
-  #container {
-    display: flex;
-    justify-content: center;
+  .text{
     align-items: center;
-    text-align: center;
-    margin-top: -180px;
-    margin-bottom: 180px;
-    border-radius: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color:whitesmoke;
   }
-  
-  /* Adjust #content_center style for mobile */
-  #content_center {
-    text-align: center;
-    background-color: whitesmoke
-  }
-
-   /* adjust .text style for mobile */
-   .text {
-    max-width: 250px;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  /* adjust .subscription style for mobile */
-  .subscription {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /* adjust .change style for mobile */
-  .change {
-    margin: 15px auto 5px auto;
-    color: blue;
-    cursor: pointer;
-  }
-  
-  /* adjust annual plan style for mobile */
-  .annual_plan {
-    margin-top: 7px;
-  }
-  
-  /* adjust #proceed style for mobile */
-  #proceed {
-    margin-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    border: none;
-    color: white;
-    background-color: blueviolet;
-    border-radius: 19px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  /* adjust .cancel style for mobile */
-  .cancel {
-    cursor: pointer;
-    color: grey;
-    margin-bottom: 40px;
+  #container{
+    background-color:whitesmoke;
   }
 }
