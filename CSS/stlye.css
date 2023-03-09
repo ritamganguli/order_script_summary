@@ -41,7 +41,6 @@
   color: blue;
   cursor: pointer;
 }
-
 .annual_plan {
   margin-top: 7px;
 }
@@ -67,43 +66,81 @@
   margin-bottom: 40px;
 }
 
-@media (max-width: 767px) {
 
-  .back{
-    display: none;
+/* add this media query to adjust styles for mobile phone screens */
+@media only screen and (max-width: 600px) {
+  
+  * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
   }
-
+  
+  /* Adjust #container style for mobile */
   #container {
-    margin-top: -160px;
-    margin-bottom: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -180px;
+    margin-bottom: 180px;
+    border-radius: 100%;
+  }
+  
+  /* Adjust #content_center style for mobile */
+  #content_center {
+    text-align: center;
+    background-color: whitesmoke
   }
 
-  .text {
-    max-width: 100%;
-    font-size: 20px;
+   /* adjust .text style for mobile */
+   .text {
+    max-width: 250px;
+    text-align: center;
     padding: 10px;
   }
-
+  
+  /* adjust .subscription style for mobile */
   .subscription {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    flex-direction: column;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
-
+  
+  /* adjust .change style for mobile */
   .change {
-    margin-left: 0;
-    margin-top: 15px;
+    margin: 15px auto 5px auto;
     color: blue;
     cursor: pointer;
-    text-align: center;
   }
-
+  
+  /* adjust annual plan style for mobile */
+  .annual_plan {
+    margin-top: 7px;
+  }
+  
+  /* adjust #proceed style for mobile */
   #proceed {
-    margin-top: 30px;
+    margin-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 19px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  /* adjust .cancel style for mobile */
+  .cancel {
+    cursor: pointer;
+    color: grey;
+    margin-bottom: 40px;
   }
 }
