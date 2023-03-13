@@ -1,88 +1,291 @@
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-  /* background-color: aqua; */
-}
-
-#container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: -360px;
-  /* margin-bottom: 60px; */
-  border-radius: 100%;
-}
-
-#content_center {
-  text-align: center;
-  background-color: whitesmoke;
-}
-
-.text {
-  max-width: 450px;
-  text-align: center;
-  padding: 10px;
-}
-
-.subscription {
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
-  /* background-color:#f0f8ff; */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.change {
-  margin-left: 100px;
-  margin-top: 15px;
-  color: blue;
-  cursor: pointer;
-}
-.annual_plan {
-  margin-top: 7px;
-}
-
-#proceed {
-  margin-top: 50px;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  background-color: blueviolet;
-  border: none;
-  color: white;
-  border-radius: 19px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.cancel {
-  cursor: pointer;
-  color: grey;
-  margin-bottom: 7px;
-}
-
-
-/* add this media query to adjust styles for mobile phone screens */
-@media only screen and (max-width: 600px) {
-  
-  * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    background-color:whitesmoke;
+/* Media Query For Mobile device*/
+@media (max-width: 480px){
+  *{
+    margin: 0;
+    padding:0;
   }
-  .text{
-    align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color:whitesmoke;
+  #contains{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  #order{
+    margin-top: 10px;
+  }
+  #textarea{
+    margin-left: 22px;
+    margin-right: 22px;
   }
   #container{
-    background-color:whitesmoke;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
+  }
+  .subs{
+    margin-top:5px;
+    margin-left:-3px;
+  }
+  .change{
+    margin-top:15px;
+    color:blue
+  }
+  #btn{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: blue;
+    color:white
+  }
+  .cancel{
+    margin-top: 15px;
+    color: grey;
+  }
+  .bgp{
+    display: none;
+  }
+}
+
+/* Media Resolution For Low Graphics  */
+@media (min-width: 481px) and (max-width: 767px){
+  *{
+    margin: 0;
+    padding:0;
+  }
+  #contains{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  #order{
+    margin-top: 10px;
+  }
+  #textarea{
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+  #container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
+  }
+  .subs{
+    margin-top:5px;
+    margin-left:-3px;
+  }
+  .change{
+    margin-top:15px;
+    color:blue
+  }
+  #btn{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: blue;
+    color:white
+  }
+  .cancel{
+    margin-top: 15px;
+    color: grey;
+  }
+  .bgp{
+    display: none;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+  *{
+    margin: 0;
+    padding:0;
+  }
+  #contains{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  #order{
+    margin-top: 10px;
+  }
+  #textarea{
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+  #container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
+  }
+  .subs{
+    margin-top:5px;
+    margin-left:-3px;
+  }
+  .change{
+    margin-top:15px;
+    color:blue
+  }
+  #btn{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: blue;
+    color:white
+  }
+  .cancel{
+    margin-top: 15px;
+    color: grey;
+  }
+  .bgp{
+    display: none;
+  }
+
+}
+
+/* Media Query for Laptops and Desktops */
+
+@media (min-width: 1025px) and (max-width: 1280px){
+  *{
+    margin: 0;
+    padding:0;
+  }
+  #contains{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  #order{
+    margin-top: 10px;
+  }
+  #textarea{
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+  #container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
+  }
+  .subs{
+    margin-top:5px;
+    margin-left:-3px;
+  }
+  .change{
+    margin-top:15px;
+    color:blue
+  }
+  #btn{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: blue;
+    color:white
+  }
+  .cancel{
+    margin-top: 15px;
+    color: grey;
+  }
+  .bgp{
+    display: none;
+  }
+}
+
+/* Media Query For Large Screen */
+@media (min-width: 1281px){
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .bgp{
+    width: 100%;
+    z-index:-1;
+  }
+  #contains{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:33%;
+    text-align: center;
+    margin-left: 33.3%;
+    margin-right: 33.3%;
+    background-color:wheat;
+    margin-top: -435px;
+    z-index: 1;
+    border-radius: 9px;
+  }
+  #order{
+    margin-top: 10px;
+  }
+  #textarea{
+    margin-top: 7px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  #container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+  .subs{
+    margin-top:9px;
+    margin-left:-32px;
+  }
+  .change{
+    margin-top: 18px;
+    color: blue;
+    cursor: pointer;
+  }
+  #btn{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: blue;
+    color:white
+  }
+  .cancel{
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
